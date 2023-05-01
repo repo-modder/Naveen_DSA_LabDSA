@@ -31,10 +31,10 @@ public class BinarySearchTree {
 		if(node == null) {
 			node = new Node(val);
 		} 
-		if (node.val < val){
+		if (node.val > val){
 			node.left = insert(node.left,val);
 		}
-		if (node.val > val){
+		if (node.val < val){
 			node.right = insert(node.right,val);
 		}
 		return node;
